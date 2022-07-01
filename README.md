@@ -1,2 +1,2 @@
 # mailmainsuite
-Instalar Mailman Suite 3 en Debian Buster (con MariaDB)
+Install Mailman Suite 3 in Debian Bullseye (with MariaDB)
