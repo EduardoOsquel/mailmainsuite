@@ -1,2 +1,3 @@
-# Mailman Suite
-Install Mailman Suite 3 in Debian Bullseye (with MariaDB)
+SSH Tunnel through proxy requiring authentication
+
+For Debian/Ubuntu/Mint
