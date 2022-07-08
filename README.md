@@ -11,6 +11,7 @@ apt-get install connect-proxy
 Export credentials if you are working behind proxy with authentication:
 
 export HTTP_PROXY_USER=<user>
+
 export HTTP_PROXY_PASSWORD=<password>
 
 Access ssh config file on /etc/ssh/ssh_config and set remote host port:
