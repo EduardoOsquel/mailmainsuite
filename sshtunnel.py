@@ -1,13 +1,14 @@
-import sys
 from PyQt5 import QtWidgets, uic
+import sys
 
 class start:
     def __init__(self):
-        app = QtWidgets.QApplication([])
-        self.window = uic.loadUi("gui/interface.ui")
-        self.window.show()
+        app = QtWidgets.QApplication(sys.argv)
         
-        self.window.actionExit.triggered.connect(self.actionExit)
+        window = uic.loadUi("gui/interface.ui")
+        window.show()
+        
+        window.actionExit.triggered.connect(self.actionExit)
         app.exec()
     
     def actionExit(self):
