@@ -18,6 +18,7 @@ class Ui_MainWindow(object):
         MainWindow.resize(800, 600)
         MainWindow.setMinimumSize(QtCore.QSize(800, 600))
         MainWindow.setMaximumSize(QtCore.QSize(800, 600))
+        MainWindow.setSizeIncrement(QtCore.QSize(0, 0))
         MainWindow.setBaseSize(QtCore.QSize(800, 600))
         MainWindow.setToolTipDuration(1)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
