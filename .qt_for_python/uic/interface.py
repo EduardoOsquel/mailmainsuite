@@ -13,8 +13,9 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.setWindowModality(QtCore.Qt.ApplicationModal)
+        MainWindow.setWindowModality(QtCore.Qt.NonModal)
         MainWindow.resize(800, 600)
+        MainWindow.setMaximumSize(QtCore.QSize(800, 600))
         MainWindow.setToolTipDuration(1)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")

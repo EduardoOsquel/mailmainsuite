@@ -10,6 +10,7 @@ class start:
         
         window.actionExit.triggered.connect(self.actionExit)
         app.exec()
+        
     
     def actionExit(self):
         sys.exit()
