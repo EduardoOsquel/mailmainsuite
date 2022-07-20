@@ -1,5 +1,6 @@
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5.uic import loadUi
+from readterminal import runCommand
 import sys
 
 class mainTunnel(QMainWindow):
@@ -11,6 +12,9 @@ class mainTunnel(QMainWindow):
         
     def actionExit_Control(self):
         sys.exit()
+    
+    def actionSend_Control(self):
+        runCommand()
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

@@ -12,5 +12,6 @@ def run_command(command):
     #print(line)
     
 #import subprocess
-output = subprocess.getoutput("ls -l")
-print(output)
+def runCommand():
+    output = subprocess.getoutput("ls -l")
+    print(output)
