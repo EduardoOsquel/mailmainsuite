@@ -1,5 +1,4 @@
-from PyQt5 import QtCore
-from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget
+from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5.uic import loadUi
 from classes.readterminal import runCommand
 from classes.settings import settingsTunnel

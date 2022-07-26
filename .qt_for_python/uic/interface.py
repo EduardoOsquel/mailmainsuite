@@ -87,5 +87,5 @@ class Ui_MainWindow(object):
         self.actionExit.setShortcut(_translate("MainWindow", "Ctrl+Q"))
         self.actionAdd_Server.setText(_translate("MainWindow", "Add Server"))
         self.actionAdd_Server.setShortcut(_translate("MainWindow", "Ctrl+A"))
-        self.actionSettings.setText(_translate("MainWindow", "Settings"))
+        self.actionSettings.setText(_translate("MainWindow", "Proxy Settings"))
         self.actionSettings.setShortcut(_translate("MainWindow", "Ctrl+S"))

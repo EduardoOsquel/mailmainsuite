@@ -6,26 +6,26 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>410</width>
+    <height>340</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>400</width>
-    <height>300</height>
+    <width>410</width>
+    <height>340</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>400</width>
-    <height>300</height>
+    <width>410</width>
+    <height>340</height>
    </size>
   </property>
   <property name="baseSize">
    <size>
-    <width>400</width>
-    <height>300</height>
+    <width>410</width>
+    <height>340</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -35,11 +35,164 @@
    <iconset>
     <normaloff>../icons/console.svg</normaloff>../icons/console.svg</iconset>
   </property>
+  <widget class="QGroupBox" name="proxyBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>381</width>
+     <height>281</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Proxy Settings</string>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>91</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>HTTP</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HTTPS</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="proxyEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>271</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="proxyLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>58</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Proxy:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="portEdit">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>80</y>
+      <width>91</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="portLabel">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>60</y>
+      <width>58</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Port:</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>130</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Proxy Authentication</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="userLabel">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>160</y>
+      <width>58</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>User:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="userEdit">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>180</y>
+      <width>271</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="passwordLabel">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>210</y>
+      <width>58</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Password:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="passwordEdit">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>271</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
   <widget class="QPushButton" name="pushClose">
    <property name="geometry">
     <rect>
-     <x>290</x>
-     <y>250</y>
+     <x>300</x>
+     <y>300</y>
      <width>90</width>
      <height>28</height>
     </rect>
