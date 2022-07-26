@@ -1,3 +1,4 @@
+from PyQt5 import QtCore
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5.uic import loadUi
 from readterminal import runCommand
@@ -9,11 +10,13 @@ class mainTunnel(QMainWindow):
         super(mainTunnel, self).__init__()
         loadUi("gui/interface.ui", self)
         
+        
+        self.logged = False
+        
         self.actionExit.triggered.connect(self.actionExit_Control)
         self.pushClose.clicked.connect(self.pushClose_Control)
         self.pushLogin.clicked.connect(self.pushLogin_Control)
-        self.logged = logged = False
-        
+    
         
     def actionExit_Control(self):
         sys.exit()
@@ -28,13 +31,12 @@ class mainTunnel(QMainWindow):
         
         
     def pushLogin_Control(self):
-        logged = self.logged
-        if not logged:
+        if not self.logged:
             self.pushLogin.setText("Logout")
-            logged = True
+            self.logged = True
         else:
             self.pushLogin.setText("Login")
-            logged = False
+            self.logged = False
 
 
 if __name__ == "__main__":
