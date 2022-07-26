@@ -2,6 +2,7 @@ from PyQt5 import QtCore
 from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget
 from PyQt5.uic import loadUi
 from readterminal import runCommand
+from settings import settingsTunnel
 import sys
 
 
@@ -49,17 +50,6 @@ class mainTunnel(QMainWindow):
             self.pushLogin.setText("Login")
             self.logged = False
 
-
-class settingsTunnel(QWidget):
-    def __init__(self):
-        super(settingsTunnel, self).__init__()
-        loadUi("gui/settings.ui", self)
-        
-        self.pushClose.clicked.connect(self.pushClose_Control)
-    
-    
-    def pushClose_Control(self):
-        self.close()
 
 
 if __name__ == "__main__":
