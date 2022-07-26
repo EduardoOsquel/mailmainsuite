@@ -14,6 +14,9 @@ class Ui_settingsForm(object):
     def setupUi(self, settingsForm):
         settingsForm.setObjectName("settingsForm")
         settingsForm.resize(400, 300)
+        settingsForm.setMinimumSize(QtCore.QSize(400, 300))
+        settingsForm.setMaximumSize(QtCore.QSize(400, 300))
+        settingsForm.setBaseSize(QtCore.QSize(400, 300))
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap("/home/eduardo/Git/sshproxytunnel/gui/../icons/console.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         settingsForm.setWindowIcon(icon)
