@@ -7,25 +7,25 @@
     <x>0</x>
     <y>0</y>
     <width>410</width>
-    <height>340</height>
+    <height>350</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
     <width>410</width>
-    <height>340</height>
+    <height>350</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
     <width>410</width>
-    <height>340</height>
+    <height>350</height>
    </size>
   </property>
   <property name="baseSize">
    <size>
     <width>410</width>
-    <height>340</height>
+    <height>350</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -129,7 +129,7 @@
      <string>Proxy Authentication</string>
     </property>
    </widget>
-   <widget class="QLabel" name="userLabel">
+   <widget class="QFrame" name="frameAuth">
     <property name="enabled">
      <bool>false</bool>
     </property>
@@ -137,62 +137,88 @@
      <rect>
       <x>10</x>
       <y>160</y>
-      <width>58</width>
-      <height>21</height>
+      <width>291</width>
+      <height>121</height>
      </rect>
     </property>
-    <property name="text">
-     <string>User:</string>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
     </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <widget class="QLineEdit" name="passwordEdit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>271</width>
+       <height>28</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="userLabel">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>58</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>User:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="passwordLabel">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>58</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Password:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="userEdit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>271</width>
+       <height>28</height>
+      </rect>
+     </property>
+    </widget>
    </widget>
-   <widget class="QLineEdit" name="userEdit">
-    <property name="enabled">
-     <bool>false</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>180</y>
-      <width>271</width>
-      <height>28</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="passwordLabel">
-    <property name="enabled">
-     <bool>false</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>210</y>
-      <width>58</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Password:</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="passwordEdit">
-    <property name="enabled">
-     <bool>false</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>230</y>
-      <width>271</width>
-      <height>28</height>
-     </rect>
-    </property>
-   </widget>
+   <zorder>frameAuth</zorder>
+   <zorder>comboBox</zorder>
+   <zorder>proxyEdit</zorder>
+   <zorder>proxyLabel</zorder>
+   <zorder>portEdit</zorder>
+   <zorder>portLabel</zorder>
+   <zorder>checkBox</zorder>
   </widget>
   <widget class="QPushButton" name="pushClose">
    <property name="geometry">
     <rect>
      <x>300</x>
-     <y>300</y>
+     <y>310</y>
      <width>90</width>
      <height>28</height>
     </rect>
