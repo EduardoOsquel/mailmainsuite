@@ -116,7 +116,7 @@
      <string>Port:</string>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox">
+   <widget class="QCheckBox" name="checkAuthBox">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -212,7 +212,7 @@
    <zorder>proxyLabel</zorder>
    <zorder>portEdit</zorder>
    <zorder>portLabel</zorder>
-   <zorder>checkBox</zorder>
+   <zorder>checkAuthBox</zorder>
   </widget>
   <widget class="QPushButton" name="pushClose">
    <property name="geometry">
