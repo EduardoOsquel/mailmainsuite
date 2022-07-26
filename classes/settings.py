@@ -1,17 +1,19 @@
-from PyQt5.QtWidgets import QWidget, QFrame
+from PyQt5 import QtCore
+from PyQt5.QtWidgets import QDialog
 from PyQt5.uic import loadUi
 
 
-class settingsTunnel(QWidget):
+class settingsTunnel(QDialog):
     def __init__(self):
         super(settingsTunnel, self).__init__()
         loadUi("gui/settings.ui", self)
         
+        # Actions
         self.pushClose.clicked.connect(self.pushClose_Control)
-        
-        #self.noAuth = False
         self.checkAuthBox.stateChanged.connect(self.frameAuth_Control)
         
+        # Configurations
+        self.setWindowModality(QtCore.Qt.ApplicationModal)
     
     def frameAuth_Control(self):
         if self.checkAuthBox.isChecked():

@@ -32,6 +32,7 @@ class mainTunnel(QMainWindow):
         
         self.popups.append(settingWin)
         
+        
     
     def actionSend_Control(self):
         runCommand()
