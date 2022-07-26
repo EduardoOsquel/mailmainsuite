@@ -1,8 +1,8 @@
 from PyQt5 import QtCore
 from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget
 from PyQt5.uic import loadUi
-from readterminal import runCommand
-from settings import settingsTunnel
+from classes.readterminal import runCommand
+from classes.settings import settingsTunnel
 import sys
 
 
@@ -27,7 +27,7 @@ class mainTunnel(QMainWindow):
         
         
     def actionSettings_Control(self):
-        print("Metodo")
+        
         settingWin = settingsTunnel()
         settingWin.show()
         
