@@ -17,6 +17,8 @@ class mainTunnel(QMainWindow):
         self.actionSettings.triggered.connect(self.actionSettings_Control)
         self.pushClose.clicked.connect(self.pushClose_Control)
         self.pushLogin.clicked.connect(self.pushLogin_Control)
+        
+        self.popups = []
     
         
     def actionExit_Control(self):
@@ -24,8 +26,12 @@ class mainTunnel(QMainWindow):
         
         
     def actionSettings_Control(self):
-        print("Ventana Nueva")
-    
+        print("Metodo")
+        settingWin = settingsTunnel()
+        settingWin.show()
+        
+        self.popups.append(settingWin)
+        
     
     def actionSend_Control(self):
         runCommand()
@@ -44,8 +50,20 @@ class mainTunnel(QMainWindow):
             self.logged = False
 
 
+class settingsTunnel(QWidget):
+    def __init__(self):
+        super(settingsTunnel, self).__init__()
+        loadUi("gui/settings.ui", self)
+        
+        self.pushClose.clicked.connect(self.pushClose_Control)
+    
+    def pushClose_Control(self):
+        self.close()
+
+
 if __name__ == "__main__":
     app = QApplication(sys.argv)
+    
     appWindow = mainTunnel()
     appWindow.show()
     

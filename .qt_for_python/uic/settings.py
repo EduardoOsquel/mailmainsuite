@@ -17,6 +17,9 @@ class Ui_settingsForm(object):
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap("/home/eduardo/Git/sshproxytunnel/gui/../icons/console.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         settingsForm.setWindowIcon(icon)
+        self.pushClose = QtWidgets.QPushButton(settingsForm)
+        self.pushClose.setGeometry(QtCore.QRect(290, 250, 90, 28))
+        self.pushClose.setObjectName("pushClose")
 
         self.retranslateUi(settingsForm)
         QtCore.QMetaObject.connectSlotsByName(settingsForm)
@@ -24,3 +27,4 @@ class Ui_settingsForm(object):
     def retranslateUi(self, settingsForm):
         _translate = QtCore.QCoreApplication.translate
         settingsForm.setWindowTitle(_translate("settingsForm", "Settings"))
+        self.pushClose.setText(_translate("settingsForm", "Close"))

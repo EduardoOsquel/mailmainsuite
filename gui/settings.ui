@@ -17,6 +17,19 @@
    <iconset>
     <normaloff>../icons/console.svg</normaloff>../icons/console.svg</iconset>
   </property>
+  <widget class="QPushButton" name="pushClose">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>250</y>
+     <width>90</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>
