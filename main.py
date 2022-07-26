@@ -57,6 +57,7 @@ class settingsTunnel(QWidget):
         
         self.pushClose.clicked.connect(self.pushClose_Control)
     
+    
     def pushClose_Control(self):
         self.close()
 
