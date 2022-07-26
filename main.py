@@ -1,5 +1,5 @@
 from PyQt5 import QtCore
-from PyQt5.QtWidgets import QApplication, QMainWindow
+from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget
 from PyQt5.uic import loadUi
 from readterminal import runCommand
 import sys
@@ -14,6 +14,7 @@ class mainTunnel(QMainWindow):
         self.logged = False
         
         self.actionExit.triggered.connect(self.actionExit_Control)
+        self.actionSettings.triggered.connect(self.actionSettings_Control)
         self.pushClose.clicked.connect(self.pushClose_Control)
         self.pushLogin.clicked.connect(self.pushLogin_Control)
     
@@ -21,6 +22,10 @@ class mainTunnel(QMainWindow):
     def actionExit_Control(self):
         sys.exit()
         
+        
+    def actionSettings_Control(self):
+        print("Ventana Nueva")
+    
     
     def actionSend_Control(self):
         runCommand()

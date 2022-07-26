@@ -26,7 +26,7 @@ class Ui_MainWindow(object):
         MainWindow.setSizeIncrement(QtCore.QSize(0, 0))
         MainWindow.setBaseSize(QtCore.QSize(700, 160))
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("/home/eduardo/Git/sshproxytunnel/gui/../../../.designer/icons/console.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("/home/eduardo/Git/sshproxytunnel/gui/../icons/console.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         MainWindow.setWindowIcon(icon)
         MainWindow.setWindowOpacity(1.0)
         MainWindow.setToolTipDuration(1)

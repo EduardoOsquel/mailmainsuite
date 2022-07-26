@@ -51,7 +51,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>../../../.designer/icons/console.svg</normaloff>../../../.designer/icons/console.svg</iconset>
+    <normaloff>../icons/console.svg</normaloff>../icons/console.svg</iconset>
   </property>
   <property name="windowOpacity">
    <double>1.000000000000000</double>
