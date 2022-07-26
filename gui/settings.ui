@@ -7,25 +7,25 @@
     <x>0</x>
     <y>0</y>
     <width>410</width>
-    <height>350</height>
+    <height>360</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
     <width>410</width>
-    <height>350</height>
+    <height>360</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
     <width>410</width>
-    <height>350</height>
+    <height>360</height>
    </size>
   </property>
   <property name="baseSize">
    <size>
     <width>410</width>
-    <height>350</height>
+    <height>360</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -119,7 +119,7 @@
    <widget class="QCheckBox" name="checkAuthBox">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>60</x>
       <y>130</y>
       <width>171</width>
       <height>21</height>
@@ -135,7 +135,7 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>50</x>
       <y>160</y>
       <width>291</width>
       <height>121</height>
@@ -204,6 +204,9 @@
        <height>28</height>
       </rect>
      </property>
+     <property name="clearButtonEnabled">
+      <bool>false</bool>
+     </property>
     </widget>
    </widget>
    <zorder>frameAuth</zorder>
@@ -218,13 +221,26 @@
    <property name="geometry">
     <rect>
      <x>300</x>
-     <y>310</y>
+     <y>320</y>
      <width>90</width>
      <height>28</height>
     </rect>
    </property>
    <property name="text">
     <string>Close</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushOK">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>320</y>
+     <width>90</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OK</string>
    </property>
   </widget>
  </widget>
