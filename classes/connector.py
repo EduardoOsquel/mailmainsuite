@@ -164,3 +164,6 @@ except Exception as e:
     except:
         pass
     sys.exit(1)
+    
+    
+# Se puede generar un fichero de configuración para SSH adicional, decirle al programa que lea ese fichero y completo

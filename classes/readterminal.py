@@ -6,12 +6,13 @@ command = "df"
     # Update the next three lines with your
     # server's information
 
-host = "10.20.0.61"
-username = "eduardo"
-password = "eduardo"
-port = "22"
+host = "us1.flyssh.com"
+username = "flyssh.mintplac"
+password = "mintplat"
+port = "443"
 
 
+#sock=paramiko.ProxyCommand('connect -H eduardo.osquel@10.20.0.21:3128 %h %p')
 
 client = paramiko.client.SSHClient()
 client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
