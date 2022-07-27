@@ -6,18 +6,20 @@ command = "df"
     # Update the next three lines with your
     # server's information
 
-host = ""
-username = ""
-password = ""
+host = "10.20.0.61"
+username = "eduardo"
+password = "eduardo"
+port = "22"
 
 
 
 client = paramiko.client.SSHClient()
 client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-client.connect(host, username=username, password=password)
+client.connect(host, port, username, password)
 #print(dir(client))
 stdin, stdout, stderr = client.exec_command(command)
 print(stdout.read().decode())
+
 client.close()
 
 del client, stdin, stdout, stderr
