@@ -1,7 +1,8 @@
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5.uic import loadUi
-from classes.readterminal import runCommand
 from classes.settings import settingsTunnel
+from classes.loadconf import LoadConf
+from classes.saveconf import SaveConf
 import sys
 
 
@@ -33,7 +34,6 @@ class mainTunnel(QMainWindow):
         self.popups.append(settingWin)
         
         
-    
     def actionSend_Control(self):
         runCommand()
         
